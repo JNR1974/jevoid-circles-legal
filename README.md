@@ -1,36 +1,23 @@
-# Jevoid Circles — legal pages for GitHub Pages
+# Jevoid Circles — GitHub Pages legal site
 
-**DRAFT — prepared for private Git staging only. Do NOT publish or enable GitHub Pages yet.**
+**Prepared 18 October 2026. Candidate content for review; not yet approved for publication.**
 
-Static responsive website with `index.html`, `privacy.html`, `terms.html` and `style.css`. These draft documents are based on the current Jobs 01–03 features and planned Jevoid Circles safety/location features; **they are not legal advice or ready for public acceptance**.
+Files: `index.html`, `privacy.html`, `terms.html`, `style.css`, `.nojekyll`, `.gitignore`, `PUBLISH_CHECKLIST.md`.
 
-## Suggested GitHub setup now
+The pages contain the confirmed legal controller **Jordi Nogues**, Ireland, and contact **LensLabsAI@gmail.com**. They reflect the original adults-18+ Jevoid Circles MVP (including locally complete Circle CRUD), **not** a parent-managed children-tracking product. Location sharing, journeys and SOS are described as planned, not currently operating. Confirmed legal details are included while unresolved business identity/address, processors, transfer, retention, deletion and deployment details remain publication blockers. See `PUBLISH_CHECKLIST.md`.
 
-1. Create a new **private** GitHub repository named `jevoid-circles-legal` under your account.
-2. Upload the files from this folder to its **root**, or push them with Git. Do not upload your Android repository or Firebase credentials.
-3. **Leave Settings → Pages disabled** and keep the repository private until publication review. This draft has legal placeholders and is not suitable for public users.
-4. Work on content privately while Job 04 continues. Use `PUBLISH_CHECKLIST.md` to finish all unresolved facts and legal operator/contact disclosures.
+## Upload to GitHub privately first
 
-## Future publication (only after approval)
+1. Create a separate private GitHub repository, e.g. `jevoid-circles-legal`.
+2. Upload these files to its repository root. Do not upload Android source code, Firebase config, private keys or other credentials.
+3. Keep GitHub Pages **disabled** while reviewing, and do not invite public users to rely on draft policies.
+4. Complete every item in `PUBLISH_CHECKLIST.md` before publication, and set the final effective date and release consent version.
+5. When approved, make the separate repository public if required by your plan and enable **Settings → Pages → Deploy from branch → main / (root)**.
 
-On GitHub Free, GitHub Pages normally requires a **public** repository. Once legal review and placeholders are finished, change this separate repository to public, then visit **Settings → Pages → Deploy from a branch → main / (root)**. On eligible paid plans, other repository visibility options may exist, but Pages websites are publicly accessible in every case.
-
-For GitHub user `JNR1974` and repository `jevoid-circles-legal`, the *expected*, not-yet-live URLs are:
-
+Example expected URLs (not active until published):
 - `https://jnr1974.github.io/jevoid-circles-legal/privacy.html`
 - `https://jnr1974.github.io/jevoid-circles-legal/terms.html`
 
-Verify the real published URLs before adding them to the Android app. In the existing manual FirebaseOptions setup, the Android app reads only `POLICY_URL` and `TERMS_URL` from its ignored `firebase.debug.properties` (and later separately prepared release properties). A downloaded `google-services.json` does not configure these URLs.
+Open in a signed-out browser and confirm HTTPS and rendering. In the Android repo, set `POLICY_URL` and `TERMS_URL` in the local ignored `firebase.debug.properties`, and later separate release configuration. Do not change the existing Hilt/manual FirebaseOptions initialization or insert placeholder legal consent.
 
-## Cautions
-
-- **Minimum identity is not anonymity:** Irish/EU GDPR generally requires the identity and contact information of the actual controller. A brand alone may not meet that obligation for a sole trader; confirm professional advice and a suitable business correspondence address.
-- A separate inbox can minimize personal email exposure but must be monitored.
-- A privacy policy is not a replacement for feature-specific consent or Android permission explanations.
-- Publishing legally incomplete drafts, including `[PLACEHOLDER]` text, risks giving users incorrect information.
-- Git commits and repository history remain accessible to others after a public release. Do not commit personal details that you would later want hidden from history; add them only when ready for disclosure.
-
-References:
-- https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
-- https://support.google.com/googleplay/android-developer/answer/18258653
-- https://www.dataprotection.ie/en/organisations/know-your-obligations/transparency
+Public GitHub repositories retain commits and prior published information may be archived. Keep unnecessary private information out of all committed revisions.

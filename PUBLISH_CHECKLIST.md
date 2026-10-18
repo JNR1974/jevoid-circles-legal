@@ -1,16 +1,25 @@
-# Publication checklist — Jevoid Circles
+# Jevoid Circles — before public GitHub Pages publication
 
-**Not approved for publication or acceptance.**
+**Status: finalized content candidate, NOT legal sign-off or publication-ready.**
 
-- [ ] Confirm the real legal controller's name and minimum necessary contact/address disclosures for sole-trader operation. A brand alone may be insufficient.
-- [ ] Set up a dedicated privacy/support email and verify responses.
-- [ ] Verify implementation, Firebase processors/transfers, retention periods, account deletion, age eligibility and lawful bases against release code.
-- [ ] Confirm any eventual optional location sharing, emergency/SOS features and background permissions before describing them as live.
-- [ ] Have the draft legally reviewed for Irish/EU GDPR and applicable Google Play and consumer requirements.
-- [ ] Replace **all** square-bracket placeholders in each HTML page, resolve DRAFT warnings and set correct effective dates.
-- [ ] Synchronize the app/backend legal policy version (earlier development acceptance uses 2026-10-17) with final versions; do not fabricate consent.
-- [ ] Confirm repo contains no private credentials, sensitive logs or personal identifying details you would not wish to publish in Git history.
-- [ ] Only then publish GitHub Pages and test both HTTPS pages in a logged-out browser and on mobile.
-- [ ] Enter verified URLs in ignored `firebase.debug.properties`, rebuild and test actual links and onboarding.
+## Confirmed for draft
+- Data controller / sole trader: **Jordi Nogues**, Ireland.
+- Service: **Jevoid Circles**.
+- Public support and privacy contact: **LensLabsAI@gmail.com** (verify monitored inbox).
+- First-release audience per original PRD: **adults 18+**; under-18/child-tracking functionality is excluded for now.
+- Current development state: live Firebase authentication and App Check debug exchange validated; Job 04 Circle CRUD and role control locally/emulator validated, NOT deployed live.
+- Opt-in temporary location sharing, journeys and SOS are **planned**, not live.
 
-**Note:** `noindex` discourages indexing, but does not make public GitHub Pages or public repositories private.
+## Must resolve before publishing
+- [ ] Confirm whether Irish sole-trader/business and EU consumer rules require a business/trading address and any additional contact/registration information; provide a suitable lawful business correspondence address if required (avoid adding home address without considering alternatives). Check with an Irish solicitor/privacy professional.
+- [ ] Verify final inventory of data categories, Firebase/Google processors and processing locations, transfers and safeguards; confirm GDPR lawful bases and retention periods for data, security logs, backup and deletion.
+- [ ] Validate account-deletion functionality and public deletion instructions against **deployed** backend (not only emulator), as applicable for Google Play.
+- [ ] Confirm deployed Circle access controls/other actual functionality; update Privacy/Terms before location, invitation, SOS or billing goes live.
+- [ ] Verify age 18+ enforcement in app AND backend, plus appropriate Google Play audience declarations.
+- [ ] Review exact legal/consent effective date and version synchronization (development backend historically uses 2026-10-17); update app, server and documents together. Never fabricate user consent.
+- [ ] Obtain qualified Irish/EU legal review, including GDPR transparency, ePrivacy, consumer/e-commerce disclosure obligations and safety-service wording.
+- [ ] On approval, update the draft banner and noindex policy appropriately, mark actual effective date, and verify pages render and links work on mobile.
+- [ ] Confirm repository and Git history contain no secrets or unpublished personal details; public repositories preserve commit history.
+- [ ] Publish GitHub Pages ONLY after checklist passes; verify unauthenticated HTTPS links, then configure POLICY_URL and TERMS_URL in ignored Firebase properties.
+
+No live Firebase deployment, billing change or public publication is included in this package.
